@@ -39,7 +39,7 @@ class Bullet:
     def collision_check(self, enemys):
         for enemy in enemys:
             collision = self.overlap(self.position, enemy.position)
-            print(self.state)
+            
             if collision:
                 enemy.state = 'die'
                 self.state = 'hit'
